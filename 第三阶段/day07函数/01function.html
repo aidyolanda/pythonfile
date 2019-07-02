@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>  </style>
+  <script>
+
+//匿名函数自执行：（函数声明）（实参）
+  (function(){
+        var a=100;
+       //构建局部作用域，运行结束即回收
+      console.log("匿名函数",a)
+  })()
+
+  //接收函数
+
+  var fn=function(){
+        console.log("fn函数被调用")
+    }
+  fn();
+
+  //函数作为参数传递
+
+  function show(f){
+
+        console.log("f",f)
+  }
+
+//直接传递函数名
+show(fn);
+
+//匿名函数作为参数传递
+show(function(){
+console.log("匿名函数传递");})
+
+
+
+
+
+
+
+
+
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>
