@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>  </style>
+    <script src="jquery-1.11.3.js"> </script>
+
+    <script> </script>
+
+
+</head>
+<body>
+    <div id="box">
+        <p>
+            <span>
+                p-span
+            </span>
+        </p>
+    </div>
+<script>
+    console.log($("p").parent());
+    console.log($("p").parents(),$("p").parent("#box"));
+    console.log($("div").children(),$("div").children("p"));
+    console.log($("div").find("span"))//获取满足选择器所有的后代
+    console.log($("p").siblings("b"));
+    var h2=$("<h2></h2>");
+    h2.html("二级标题").css("color","red").attr("id","d2")
+    console.log(h2)
+
+    $("#box").append(h2);//加到父元素的结尾位置
+    $("box").prepend(h2);//加到父元素开头位置
+    $("#box").before(h2);
+    var h3=$("<h3></h3>");
+    h3.html("h3标签").css("color","blue").attr("id","d3");
+    $("#box").prepend(h3);
+    var h4=$("<h4></h4>");
+    h4.html("h4标签").css("color","yellow").attr("id","d4");
+    $("#box").append(h4);
+    var a1=$("<a href>1</a>");
+    var a2=$("<a href>2</a>");
+    h3.after(a1);
+    h4.before(a2);
+    h4.remove();
+</script>
+</body>
+</html>
