@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title >高清正版视频</title>
+    <style>
+        /*清除浏览器默认样式*/
+        body{
+            margin:0;
+            padding:0;
+            min-width:1200px;
+            }
+
+        #nav{
+            height:70px;
+            background:#BED2F5;
+            line-height:70px;
+            margin-bottom:10px;
+            }
+
+        .nav_left>a>img{
+            float:left;
+            width:60px;
+            height:60px;
+            border-radius:10px;
+            margin-top:5px;
+            margin-left:80px;
+            margin-right:30px;
+           }
+
+        /*超链接和标签控件标签要单独设置*/
+        a{
+            text-decoration:none;
+            font-size:28px
+           }
+
+        .nav_left>a{
+                margin-right:10px;
+                font-size:28px;
+            }
+
+        .search{
+            float:left
+            height:50px;
+            }
+
+        .search input{
+            box-sizing:border-box;
+            width:300px;
+            height:50px;
+            border-radius:25px 0 0 25px;/*height half*/
+            border:1px solid gray;
+            padding:5px 10px;
+            margin-left:100px;
+            }
+        /*取消表单聚焦时的轮廓线*/
+        input:focus{
+            outline:none;
+            }
+
+        .search button{
+            width:100px;
+            height:50px;
+            border-radius:0 25px 25px 0;
+            vertical-align:middle;
+            background:#76EEC6;
+            }
+
+        .nav_right a{
+            font-size:18px;
+            float:right;
+            color:#0D0D0D;
+            width:70px;
+            height:70px;
+            line-height:70px;
+            text-align:center;
+            }
+    </style>
+</head>
+<body>
+     <!--导航栏-->
+    <div id="nav">
+        <!--导航栏右侧-->
+        <div  class="nav_right" >
+            <a href="">vip</a>
+            <a href="">看过</a>
+            <a href="">收藏</a>
+            <a href="">消息</a>
+            <a href="">客户端</a>
+        </div>
+        <!--导航栏左侧-->
+        <div style="float:left" class="nav_left">
+            <a href="">
+                <img src="7.jpg" alt="" >
+            </a>
+            <a href="">首页</a>
+            <a href="">导航</a>
+        </div>
+        <!--导航栏中间：搜索栏-->
+        <form action="/login" method="get" enctype="multipart/form-data">
+            <div class="search" >
+                <input type="text" placeholder="请输入搜索内容"><button>全网搜</button>
+            </div>
+        </form>
+    </div>
+    <!--视频播放-->
+    <div id="main"  style="text-aligin:left">
+        <video width="900" height="500" controls="controls">
+        <source src="往事随风.mp4" type="video/mp4">
+    </div>
+
+<!--<embed src="http://player.youku.com/player.php/sid/XMjI0MDIwNDc2/v.swf"-->
+<!--       quality="high" width="700" height="500" align="middle"-->
+<!--       allowScriptAccess="sameDomain" type="application/x-shockwave-flash">-->
+    <div></div>
+</body>
+</html>
