@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>%s</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+
+        #body{
+        border:2px solid red;}
+
+        #body_left{
+        position:relative;
+        border:2px solid blue;
+        }
+
+        #video_info{
+        position:absolute;
+        left:0;
+        top:530px;
+        width:900px;
+        background:red;
+        }
+
+        #l1{
+        position:absolute;
+        left:0;
+        top:550px;
+        width:900px;
+        background:orange;
+        margin-top:10px;
+        }
+
+        #l2{
+        position:absolute;
+        left:0;
+        top:570px;
+        width:900px;
+        margin-top:15px;
+        background:cyan;}
+
+        #l3{
+        position:absolute;
+        left:0;
+        top:600px;}
+
+        #body_left_down{
+        position:relative;
+        margin-top:100px;
+        width:900px;
+
+       }
+
+        #down1{
+        position:absolute;
+         left:0
+         top:10px;
+         width:900px;
+         height:50px;
+         background:green;}
+
+
+
+        #body img{
+            width:200px;
+            height:150px;
+            }
+
+        #body a{
+        font-size:16px;
+        margin-left:10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <script src="jquery-1.11.3.js"></script>
+    <script src="function.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<div id="nav">
+    <!--导航栏左侧-->
+    <div id="nav_left" class="left">
+        <!--导航栏左侧LOGO位置-->
+        <div id="nav_left_logo" class="left">
+            <a href="" class="left">
+                <img src="7.jpg" alt="">达内TV
+            </a>
+        </div>
+        <!--导航栏左侧跳转首页-->
+        <a href="" class="left">首页</a>
+        <!--导航栏左侧节目单选择-->
+        <div id="program_selection" class="left">
+            <a class="left">频道</a>
+            <div id="selection_content">
+                <a href="" class="left">综艺</a>
+                <a href="" class="left">电视剧</a>
+                <a href="" class="left">电影</a>
+                <a href="" class="left">动漫</a>
+                <a href="" class="left">少儿</a>
+                <a href="" class="left">新闻</a>
+                <a href="" class="left">纪录片</a>
+                <a href="" class="left">音乐</a>
+                <a href="" class="left">原创</a>
+                <a href="" class="left">生活</a>
+                <a href="" class="left">教育</a>
+                <a href="" class="left">游戏</a>
+            </div>
+        </div>
+    </div>
+    <!--导航栏中间：搜索栏-->
+    <form action="/login" method="get" enctype="multipart/form-data" id="form">
+        <div id="search" class="left">
+            <input type="text" name="userinput" placeholder="请输入搜索内容">
+            <button>全网搜</button>
+        </div>
+    </form>
+    <!--导航栏右侧-->
+    <div id="nav_right" class="right">
+        <div class="left">
+            <a href="">vip</a>
+        </div>
+        <div class="left">
+            <a href="">看过</a>
+        </div>
+        <div class="left">
+            <a href="">收藏</a>
+        </div>
+        <div class="left">
+            <a href="">消息</a>
+        </div>
+        <div class="left">
+            <a href="">客户端</a>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <!--视频播放区域-->
+    <div id="video_info_set">
+        <!--左侧视频播放区-->
+        <div id="video_left" class="left">
+            <video controls="controls">
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+        </div>
+        <!--右侧视频选择区-->
+        <div id="video_right" class="right">
+            <div id="video_choice_title">
+                <h2>达内独播</h2>
+            </div>
+            <!--窗口选择区域-->
+            <div id="select_window">
+                <!--第1个窗口 -->
+                <div id='right_first'>
+                    <div class="left">
+                        <a href="">
+                            <img src="1.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第2个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="2.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第3个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="3.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第4个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="4.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第5个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="5.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第6个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="6.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第7个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="7.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第8个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="1.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第9个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="2.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+                <!--第10个窗口 -->
+                <div class="outside">
+                    <div class="left">
+                        <a href="">
+                            <img src="3.jpg" alt="" class="img">
+                        </a>
+                    </div>
+                    <div class="left text">
+                        <p style="margin-top:33px;">
+                            <a href="">机器人指南 人工智能时代促进经济发展</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--播放器下方评论区-->
+        <div id="evaluate" class="left">
+            <div>
+                <span>详细</span>
+                <span>分享</span>
+                <span>收藏</span>
+                <span>下载</span>
+                <span>手机看</span>
+                <span>手机看</span>
+            </div>
+        </div>
+    </div>
+    <!--视频推荐区-->
+    <div style="border:1px solid blue;height:1000px;margin-left:70px;margin-right:70px">
+
+    </div>
+</div>
+<div id="bottom" style="border:2px solid green; height:200px;margin-left:70px;margin-right:70px;background:cyan;">
+    <h1>底部版权</h1>
+</div>
+
+<!--            &lt;!&ndash;视频信息介绍&ndash;&gt;-->
+<!--            <div id="video_info" class="left">-->
+<!--                <h2>视频介绍:独孤求败只求一败</h2>-->
+<!--            </div>-->
+<!--            <div id="l1" class="left">-->
+<!--                <span>热度</span>-->
+<!--                <span>发布时间</span>-->
+<!--                <span>分享</span>-->
+<!--                <span>下载</span>-->
+<!--                <span>收藏</span>-->
+<!--            </div>-->
+
+<!--            <div id="body_left_down" class="left">-->
+<!--                <div id="down1">-->
+<!--                    <div>-->
+<!--                        <h2>看了还会看</h2>-->
+<!--                    </div>-->
+<!--                    <div>换一换</div>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <div>视频1</div>-->
+<!--                    <div>视频2</div>-->
+<!--                    <div>视频3</div>-->
+<!--                    <div>视频4</div>-->
+<!--                    <div>视频5</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>评论</div>-->
+<!--        <div style=""></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+
+
+<!--    </div>-->
+
+<!--        &lt;!&ndash;右侧窗口&ndash;&gt;-->
+<!--        <div style="width:390px;height:500px;float:left;margin-left:30px;overflow:auto;">-->
+<!--            &lt;!&ndash;标题&ndash;&gt;-->
+<!--            <div style="color:blue;font-size:28px;margin-bottom:20px;">相关推荐</div>-->
+<!--            &lt;!&ndash; 第1个窗口 &ndash;&gt;-->
+<!--            <div style="margin-bottom:15px;height:150px;padding:0.1px;">-->
+<!--                <div style="float:left;margin-right:10px;">-->
+<!--                    <img src="1.jpg" alt="">-->
+<!--                </div>-->
+<!--                <div style="height:150px;">-->
+<!--                    <p style="margin:0;margin-top:30px;"><a href="" id="i1">茶具指南,现代人所说的“茶具”主要指茶壶、茶杯、茶勺等这类饮茶器具</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+<!--            &lt;!&ndash; 第3个窗口 &ndash;&gt;-->
+<!--            <div style="margin-bottom:15px;height:150px;padding:0.1px;">-->
+<!--                <div style="float:left;margin-right:10px;">-->
+<!--                    <img src="3.jpg" alt="">-->
+<!--                </div>-->
+<!--                <div style="height:150px;">-->
+<!--                    <p style="margin:0;margin-top:30px;"><a href="">茶具指南,现代人所说的“茶具”主要指茶壶、茶杯、茶勺等这类饮茶器具</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; 第4个窗口 &ndash;&gt;-->
+<!--            <div style="margin-bottom:15px;height:150px;padding:0.1px;">-->
+<!--                <div style="float:left;margin-right:10px;">-->
+<!--                    <img src="4.jpg" alt="">-->
+<!--                </div>-->
+<!--                <div style="height:150px;">-->
+<!--                    <p style="margin:0;margin-top:30px;"><a href="">茶具指南,现代人所说的“茶具”主要指茶壶、茶杯、茶勺等这类饮茶器具</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; 第5个窗口 &ndash;&gt;-->
+<!--            <div style="margin-bottom:15px;height:150px;padding:0.1px;">-->
+<!--                <div style="float:left;margin-right:10px;">-->
+<!--                    <img src="5.jpg" alt="">-->
+<!--                </div>-->
+<!--                <div style="height:150px;">-->
+<!--                    <p style="margin:0;margin-top:30px;"><a href="">茶具指南,现代人所说的“茶具”主要指茶壶、茶杯、茶勺等这类饮茶器具</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; 第6个窗口 &ndash;&gt;-->
+<!--            <div style="margin-bottom:15px;height:150px;padding:0.1px;">-->
+<!--                <div style="float:left;margin-right:10px;">-->
+<!--                    <img src="3.jpg" alt="">-->
+<!--                </div>-->
+<!--                <div style="height:150px;">-->
+<!--                    <p style="margin:0;margin-top:30px;"><a href="">茶具指南,现代人所说的“茶具”主要指茶壶、茶杯、茶勺等这类饮茶器具</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; 第7个窗口 &ndash;&gt;-->
+<!--            <div style="margin-bottom:15px;height:150px;padding:0.1px;">-->
+<!--                <div style="float:left;margin-right:10px;">-->
+<!--                    <img src="4.jpg" alt="">-->
+<!--                </div>-->
+<!--                <div style="height:150px;">-->
+<!--                    <p style="margin:0;margin-top:30px;"><a href="">茶具指南,现代人所说的“茶具”主要指茶壶、茶杯、茶勺等这类饮茶器具</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div style="background:red;position:fixed;right:0;bottom:0;">返回顶部</div>-->
+<!--</div>-->
+
+
+<!--    <script>-->
+<!--                //下拉菜单点击传值-->
+<!--        $("#i1").click(function (){-->
+<!--            //获取被点击元素的标签内容-->
+<!--            console.log(this.innerHTML,$(this).html());-->
+<!--            $("h2").html($(this).html());-->
+<!--        });-->
+
+<!--     document.getElementById("input_text").autocomplete = "off";-->
+<!--                    /*-->
+<!--                    交由form元素监听,在点击提交按钮时触发,允许返回布尔值,-->
+<!--                    true表示允许发送,false表示阻止发送-->
+<!--                    */-->
+<!--                    form.onsubmit = function (){-->
+<!--                        //用户名为空时阻止提交-->
+<!--                        if(input_text.value == ""){-->
+<!--                            return false;-->
+<!--                        }else{-->
+<!--                            return true;-->
+<!--                             }-->
+<!--                    }-->
+
+
+<!--    </script>-->
+</body>
+</html>
